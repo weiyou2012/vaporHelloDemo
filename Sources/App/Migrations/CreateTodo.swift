@@ -1,5 +1,7 @@
 import Fluent
 
+// 数据库迁移
+
 struct CreateTodo: AsyncMigration {
     func prepare(on database: Database) async throws {
         try await database.schema("todos")

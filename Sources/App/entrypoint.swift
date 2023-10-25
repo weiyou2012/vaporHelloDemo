@@ -20,6 +20,7 @@ private extension Vapor.Application {
     }
 }
 
+// 程序入口，设置配置运行
 @main
 enum Entrypoint {
     static func main() async throws {

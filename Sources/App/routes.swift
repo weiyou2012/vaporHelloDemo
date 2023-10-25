@@ -1,13 +1,14 @@
 import Fluent
 import Vapor
 
+// 路由方法，路由注册
 func routes(_ app: Application) throws {
     app.get { req async in
         "It works!"
     }
 
     app.get("hello") { req async -> String in
-        "Hello, world!"
+        "这是一个hello, world的例子"
     }
 
     try app.register(collection: TodoController())

@@ -1,7 +1,9 @@
 import Fluent
 import Vapor
 
+// Controllers 是应用程序不用逻辑的分组
 struct TodoController: RouteCollection {
+    // 绑定路由请求和实现方法
     func boot(routes: RoutesBuilder) throws {
         let todos = routes.grouped("todos")
         todos.get(use: index)

@@ -2,7 +2,7 @@ import Vapor
 import Dispatch
 import Logging
 
-/// This extension is temporary and can be removed once Vapor gets this support.
+/// 这个扩展是暂时的，一旦Vapor得到这种支持后可以删除。
 private extension Vapor.Application {
     static let baseExecutionQueue = DispatchQueue(label: "vapor.codes.entrypoint")
     

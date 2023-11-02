@@ -2,7 +2,6 @@ import Fluent
 import Vapor
 
 // 存放 Content和Fluent Model 类和结构体，对应数据库
-
 final class Todo: Model, Content {
     static let schema = "todos"
     

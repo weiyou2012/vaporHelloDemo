@@ -1,7 +1,7 @@
 import Fluent
 import Vapor
 
-// 路由方法，路由注册
+// 路由注册
 func routes(_ app: Application) throws {
     app.get { req async in
         "It works!"
